@@ -1,0 +1,18 @@
+02/01/2018 , 18:15:57,Unknown column 'songid' in 'field list'
+
+02/01/2018 , 18:18:13,Unknown column 'songid' in 'field list'
+02/01/2018 , 18:18:16,Unknown column 'songid' in 'field list'
+02/01/2018 , 18:18:19,Unknown column 'songid' in 'field list'
+02/01/2018 , 18:18:26,Unknown column 'songid' in 'field list'
+02/01/2018 , 19:20:05 , Unknown column 'songid' in 'field list'
+02/01/2018 @ 19:20:32 , Unknown column 'songid' in 'field list'
+02/02/2018 @ 01:18:08 , Unknown column 'songid' in 'field list'
+02/02/2018 @ 02:33:48 , No value specified for parameter 8
+02/02/2018 @ 02:34:17 , You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'number_of_tracks, PMRC_rating, length) VALUES ('8808d26b-ce47-439f-a8ba-ee26e80f' at line 1
+02/02/2018 @ 02:35:12 , You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'number_of_tracks, PMRC_rating, length)VALUES ('d023a4cd-2a6b-4817-b095-a11ba6833' at line 1
+02/02/2018 @ 02:35:44 , Column count doesn't match value count at row 1
+02/02/2018 @ 02:37:09 , Parameter index out of range (8 > number of parameters, which is 7).
+02/02/2018 @ 03:59:09 , Table 'spotify_knockoff.arist' doesn't exist
+
+02/02/2018 @ 03:59:28 , Unknown column 'song_id' in 'where clause'
+
