@@ -16,7 +16,7 @@ public class Artist {
 	private String firstName;
 	private String lastName;
 	private String bandName;
-	private String bio; //have setter for bio
+	private String bio;
 	
 	/**
 	 * Creates a new artist object and adds it to the database
