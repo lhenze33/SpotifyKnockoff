@@ -11,8 +11,7 @@ public class SpotifyManager {
 		EntityManager emanager = emfactory.createEntityManager();
 		
 		emanager.getTransaction().begin();
-		Song s = emanager.find(Song.class, "be766dc7-5973-4e8e-8359-a68d7164e24d");
-		s.setTitle("Friend of the Devil");
+		//Song s = emanager.find(Song.class, "be766dc7-5973-4e8e-8359-a68d7164e24d");
 		//s.setFilePath("songs/friendofthedevil.mp3");
 		//emanager.remove(s);
 		
@@ -25,7 +24,7 @@ public class SpotifyManager {
 		//emanager.persist(s);
 		//emanager.persist(a);
 		//emanager.persist(a);
-		emanager.persist(s);
+		//emanager.persist(s);
 		emanager.getTransaction().commit();
 		emanager.close();
 		emfactory.close();
