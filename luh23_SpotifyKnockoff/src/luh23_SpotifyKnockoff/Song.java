@@ -7,20 +7,52 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.*;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
 /**Represents a song for the Spotify Knockoff application
  * 
  * @author Luke Henze
  *
  */
+@Entity
+@Table (name = "song")
 public class Song {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	
+	@Column (name="song_id")
 	private String songID;
+	
+	@Column (name="title")
 	private String title;
+	
+	@Column (name="length")
 	private double length;
+	
+	@Column (name="file_path")
 	private String filePath;
+	
+	@Column (name="release_date")
 	private String releaseDate;
+	
+	@Column (name="record_date")
 	private String recordDate;
+	
+	@Transient
 	private Hashtable<String, Artist> songArtists;
 	
+	/**
+	 * Default constructor for JPA
+	 */
+	public Song() {
+		super();
+	}
 	/**
 	 * Constructor for a new song that sets all relevant instance variables and inserts 
 	 * the new song into the database
@@ -198,7 +230,11 @@ public class Song {
 	public String getTitle() {
 		return title;
 	}
+	
 
+	public void setTitle(String title) {
+		this.title = title;
+	}
 	public double getLength() {
 		return length;
 	}

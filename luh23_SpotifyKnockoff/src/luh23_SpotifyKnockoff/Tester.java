@@ -53,7 +53,7 @@ public class Tester {
 		//Album a3 = new Album("168e376d-4c22-4e36-80b9-c000e53cec71");
 		//a3.deleteAlbum(a3.getAlbumID());
 		
-		//Song s5 = new Song("Sugar Magnolia",3.45,"1969-05-08","1968-01-08");
+		//Song s5 = new Song("Friend of the Devil",3.45,"1969-05-08","1968-01-08");
 		//Artist a1 = new Artist("e5c53d6d-25cd-4e47-82a9-b06974f72d9d");
 		//Album album1 = new Album("10ea48a7-c541-4f5f-a174-e82bc9c4607e");
 		//Song s5 = new Song("a9566dca-544a-457e-bd5b-c792be13dd77");
@@ -67,6 +67,7 @@ public class Tester {
 		
 		//Album album2 = new Album("American Beauty","1970-11-01","Warner Bros.", 10, "G", 42);
 		//album1.setCoverImagePath("this/is/where/album_cover.png");
+		
 		
 		
 	}

@@ -7,21 +7,58 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Hashtable;
 import java.util.UUID;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
 /** Represents an album for the SpotifyKnockoff application
  *
  * @author Luke Henze
  *
  */
+@Entity
+@Table (name="album")
 public class Album {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	
+	@Column(name="album_id")
 	private String albumID;
+	
+	@Column(name="title")
 	private String title;
+	
+	@Column(name="release_date")
 	private String releaseDate;
+	
+	@Column(name="cover_image_path")
 	private String coverImagePath;
+	
+	@Column(name="recording_company_name")
 	private String recordingCompany;
+	
+	@Column(name="number_of_tracks")
 	private int numberOfTracks;
+	
+	@Column(name="pmrc_rating")
 	private String pmrcRating;
+	
+	@Column(name="length")
 	private int length;
+	
+	@Transient
 	private Hashtable<String, Song> albumSongs;
+	
+	/**
+	 * Default constructor for JPA
+	 */
+	public Album() {
+		super();
+	}
 
 	/**
 	 * Constructor for an album object and enters album into the database

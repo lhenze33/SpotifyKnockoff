@@ -6,17 +6,46 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.UUID;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 /**Represents an artist for the Spotify Knockoff application
  * 
  * @author Luke Henze
  *
  */
+
+@Entity
+@Table(name="artist")
 public class Artist {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	
+	@Column(name="artist_id")
 	private String artistID;
+	
+	@Column(name="first_name")
 	private String firstName;
+	
+	@Column(name="last_name")
 	private String lastName;
+	
+	@Column(name="band_name")
 	private String bandName;
+	
+	@Column(name="bio")
 	private String bio;
+	
+	/**
+	 * Default constructor for JPA
+	 */
+	public Artist() {
+		super();
+	}
 	
 	/**
 	 * Creates a new artist object and adds it to the database
